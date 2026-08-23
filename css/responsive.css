@@ -1,0 +1,1594 @@
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1024px) {
+
+    .container {
+        width: 92%;
+    }
+
+    .section {
+        padding: 80px 0;
+    }
+
+    .section-heading h2,
+    .about-content h2,
+    .clinic-content h2 {
+        font-size: 36px;
+    }
+    .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+    /* NAVBAR */
+
+    .nav-menu {
+        gap: 18px;
+    }
+
+    .nav-menu a {
+        font-size: 14px;
+    }
+
+    .nav-contact-button {
+        padding: 0 18px;
+    }
+
+    /* HERO */
+
+    .hero-wrapper {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        min-height: 580px;
+    }
+
+    .hero-content h1 {
+        font-size: 43px;
+    }
+
+    .hero-content h2 {
+        font-size: 24px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    /* QUICK INFO */
+
+    .quick-info-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .info-item {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    /* HAKKIMDA */
+
+    .about-wrapper {
+        gap: 45px;
+    }
+
+    .about-image img {
+        height: 480px;
+    }
+
+    /* HİZMETLER */
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* KLİNİK */
+
+    .clinic-wrapper {
+        gap: 40px;
+    }
+
+    /* MAKALELER */
+
+    .articles-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* İLETİŞİM */
+
+    .contact-wrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+
+/* =========================
+   MOBİL / KÜÇÜK TABLET
+========================= */
+
+@media (max-width: 768px) {
+
+    :root {
+        --header-offset: 72px;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .section {
+        padding: 65px 0;
+    }
+
+    .section-heading {
+        margin-bottom: 35px;
+    }
+
+    .section-heading h2,
+    .about-content h2,
+    .clinic-content h2 {
+        font-size: 31px;
+    }
+
+    .section-heading p {
+        font-size: 15px;
+    }
+
+    /* =========================
+       NAVBAR
+    ========================= */
+
+    .navbar {
+        min-height: 72px;
+        position: relative;
+    }
+
+    .logo img {
+        height: 62px;
+    }
+
+    .logo-title {
+        font-size: 19px;
+    }
+
+    .logo-subtitle {
+        font-size: 11px;
+    }
+
+    .nav-menu {
+        position: absolute;
+        top: 72px;
+        left: 0;
+
+        width: 100%;
+
+        background-color: white;
+
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 0;
+
+        padding: 15px 5% 20px;
+
+        border-top: 1px solid #e5e7eb;
+        border-bottom: 1px solid #e5e7eb;
+
+        box-shadow: 0 12px 20px rgba(0, 0, 0, 0.06);
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-menu a {
+        width: 100%;
+        padding: 14px 0;
+        font-size: 15px;
+    }
+
+    .nav-menu a::after {
+        display: none;
+    }
+
+    .nav-contact-button {
+        display: none;
+    }
+
+    .mobile-menu-button {
+        display: block;
+    }
+
+    /* =========================
+       HERO
+    ========================= */
+
+    .hero {
+        padding-top: 50px;
+    }
+
+    .hero-wrapper {
+        grid-template-columns: 1fr;
+        min-height: auto;
+        gap: 25px;
+        text-align: center;
+    }
+
+    .hero-content {
+        padding-bottom: 15px;
+    }
+
+    .hero-small-title {
+        font-size: 12px;
+    }
+
+    .hero-content h1 {
+        font-size: 42px;
+    }
+
+    .hero-content h2 {
+        font-size: 22px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .hero-image {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .hero-image img {
+    width: 100%;
+    max-width: 400px;
+    height: 500px;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 16px;
+}
+
+    /* =========================
+       QUICK INFO
+    ========================= */
+
+    .quick-info-wrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .info-item {
+        padding: 24px 20px;
+    }
+
+    .info-item:nth-child(2) {
+        border-right: none;
+    }
+
+    /* =========================
+       HAKKIMDA
+    ========================= */
+
+    .about-wrapper {
+        grid-template-columns: 1fr;
+        gap: 55px;
+    }
+
+    .about-image {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .about-image img {
+        height: 500px;
+    }
+
+    .about-content {
+        text-align: center;
+    }
+
+    .about-features {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* =========================
+       HİZMETLER
+    ========================= */
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-card-wide {
+        grid-column: span 1;
+    }
+
+    .service-card {
+        padding: 28px;
+    }
+
+    /* =========================
+       KLİNİK
+    ========================= */
+
+    .clinic-wrapper {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .clinic-content {
+        text-align: center;
+    }
+
+    .clinic-images {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    /* =========================
+       VİDEOLAR
+    ========================= */
+
+    .videos-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .videos-grid .video-card:last-child {
+        grid-column: auto;
+        max-width: none;
+    }
+
+    /* =========================
+       MAKALELER
+    ========================= */
+
+    .articles-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* =========================
+       İLETİŞİM
+    ========================= */
+
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-info {
+        padding: 32px;
+    }
+
+    .contact-map {
+        min-height: 380px;
+    }
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    .footer-wrapper {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 40px 0;
+    }
+
+    .footer-links {
+        justify-content: center;
+    }
+
+}
+
+
+/* =========================
+   TELEFON
+========================= */
+
+@media (max-width: 576px) {
+
+    .section {
+        padding: 55px 0;
+    }
+
+    .section-heading h2,
+    .about-content h2,
+    .clinic-content h2 {
+        font-size: 28px;
+    }
+    .services-grid {
+    grid-template-columns: 1fr;
+}
+
+.service-card {
+    padding: 26px;
+}
+
+    /* HERO */
+
+    .hero {
+        padding-top: 40px;
+    }
+
+    .hero-content h1 {
+        font-size: 30px;
+    }
+
+    .hero-content h2 {
+        font-size: 20px;
+    }
+
+    .hero-content p {
+        font-size: 15px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .hero-buttons a {
+        width: 100%;
+    }
+
+    .hero-image img {
+    width: 100%;
+    max-width: 340px;
+    height: 430px;
+}
+
+    /* QUICK INFO */
+
+    .quick-info-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .info-item {
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+        text-align: center;
+    }
+
+    .info-item:last-child {
+        border-bottom: none;
+    }
+
+    /* HAKKIMDA */
+
+    .about-image::before {
+        left: -10px;
+        top: 10px;
+    }
+
+    .about-image img {
+        height: 420px;
+    }
+
+    .about-summary {
+        grid-template-columns: 1fr;
+    }
+
+    .about-features {
+        grid-template-columns: 1fr;
+    }
+
+    /* HİZMETLER */
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-card-wide {
+        grid-column: span 1;
+    }
+
+    .service-card {
+        padding: 26px;
+    }
+
+    /* KLİNİK */
+
+    .clinic-images {
+        grid-template-columns: 1fr;
+    }
+
+    .clinic-images img:first-child,
+    .clinic-images img:last-child {
+        height: 300px;
+    }
+
+    /* MAKALELER */
+
+    .articles-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .article-card img {
+        height: 210px;
+    }
+
+    /* SSS */
+
+    .faq-question {
+        font-size: 15px;
+        padding: 20px 0;
+    }
+
+    /* İLETİŞİM */
+
+    .contact-info {
+        padding: 28px 24px;
+    }
+
+    .contact-map {
+        min-height: 320px;
+    }
+
+    .contact-map iframe {
+        height: 320px;
+    }
+
+    /* SABİT SOSYAL MEDYA BUTONLARI */
+
+    .whatsapp-button,
+    .instagram-floating-button,
+    .linkedin-floating-button {
+        right: 15px;
+        width: 46px;
+        height: 46px;
+    }
+
+    .whatsapp-button {
+        bottom: 15px;
+    }
+
+    .instagram-floating-button {
+        bottom: 71px;
+    }
+
+    .linkedin-floating-button {
+        bottom: 127px;
+    }
+
+    .whatsapp-button svg,
+    .instagram-floating-button svg,
+    .linkedin-floating-button svg {
+        width: 21px;
+        height: 21px;
+    }
+
+    /* FOOTER */
+
+    .footer-links {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+}
+
+
+/* =========================
+   ÇOK KÜÇÜK TELEFON
+========================= */
+
+@media (max-width: 380px) {
+
+    .hero-content h1 {
+        font-size: 31px;
+    }
+
+    .hero-content h2 {
+        font-size: 18px;
+    }
+
+    .section-heading h2,
+    .about-content h2,
+    .clinic-content h2 {
+        font-size: 25px;
+    }
+
+    .about-image img {
+        height: 360px;
+    }
+
+    .service-card {
+        padding: 22px;
+    }
+
+}
+/* =====================================================
+   ABOUT.HTML - RESPONSIVE
+===================================================== */
+
+
+/* =====================================================
+   1200px VE ALTI
+===================================================== */
+
+@media (max-width: 1200px) {
+
+    .about-page-hero-wrapper,
+    .cv-page-container,
+    .cv-stats-grid,
+    .cv-contact-cta-wrapper {
+        width: 92%;
+    }
+
+    .about-page-hero-wrapper {
+        gap: 50px;
+    }
+
+    .about-page-hero-content h1 {
+        font-size: 46px;
+    }
+
+    .about-page-hero-image img {
+        width: 340px;
+        height: 420px;
+    }
+
+}
+
+
+/* =====================================================
+   1024px VE ALTI
+===================================================== */
+
+@media (max-width: 1024px) {
+
+    /* HERO */
+
+    .about-page-hero {
+        padding: 60px 0;
+    }
+
+    .about-page-hero-wrapper {
+        grid-template-columns: 1fr 0.8fr;
+        gap: 40px;
+    }
+
+    .about-page-hero-content h1 {
+        font-size: 42px;
+    }
+
+    .about-page-hero-content h2 {
+        font-size: 21px;
+    }
+
+    .about-page-hero-content p {
+        font-size: 15px;
+    }
+
+    .about-page-hero-image img {
+        width: 310px;
+        height: 390px;
+    }
+
+
+    /* İSTATİSTİKLER */
+
+    .cv-stat-item {
+        padding: 28px 15px;
+    }
+
+    .cv-stat-item strong {
+        font-size: 29px;
+    }
+
+
+    /* BÖLÜMLER */
+
+    .cv-section {
+        padding: 75px 0;
+    }
+
+    .cv-section-heading h2 {
+        font-size: 32px;
+    }
+
+
+    /* PROFİL */
+
+    .cv-profile-grid {
+        gap: 15px;
+    }
+
+
+    /* İŞ TECRÜBESİ */
+
+    .experience-list {
+        gap: 15px;
+    }
+
+
+    /* AKADEMİK ROL */
+
+    .academic-role-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* =====================================================
+   900px VE ALTI
+===================================================== */
+
+@media (max-width: 900px) {
+
+    /* =========================
+       HERO
+    ========================= */
+
+    .about-page-hero-wrapper {
+        grid-template-columns: 1fr;
+        gap: 45px;
+
+        text-align: center;
+    }
+
+    .about-page-hero-content {
+        max-width: 650px;
+        margin: 0 auto;
+    }
+
+    .about-page-hero-content p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .cv-hero-buttons {
+        justify-content: center;
+    }
+
+    .about-page-hero-image {
+        width: 100%;
+    }
+
+    .about-page-hero-image img {
+        width: 320px;
+        height: 400px;
+    }
+
+
+    /* =========================
+       İSTATİSTİKLER
+    ========================= */
+
+    .cv-stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cv-stat-item:nth-child(2) {
+        border-right: none;
+    }
+
+    .cv-stat-item:nth-child(1),
+    .cv-stat-item:nth-child(2) {
+        border-bottom:
+            1px solid rgba(255, 255, 255, 0.15);
+    }
+
+
+    /* =========================
+       PROFİL
+    ========================= */
+
+    .cv-profile-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* =========================
+       EĞİTİM
+    ========================= */
+
+    .cv-timeline {
+        max-width: 800px;
+    }
+
+    .cv-timeline-item {
+        grid-template-columns: 125px 1fr;
+        gap: 25px;
+    }
+
+
+    /* =========================
+       İŞ TECRÜBESİ
+    ========================= */
+
+    .experience-list {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* =========================
+       ÜYELİKLER
+    ========================= */
+
+    .membership-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* =========================
+       ÖDÜLLER
+    ========================= */
+
+    .award-list {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* =========================
+       DAVETLİ KONUŞMALAR
+    ========================= */
+
+    .talk-list {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* =========================
+       İLETİŞİM CTA
+    ========================= */
+
+    .cv-contact-cta-wrapper {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    .cv-contact-buttons {
+        justify-content: center;
+    }
+
+}
+
+
+/* =====================================================
+   768px VE ALTI
+===================================================== */
+
+@media (max-width: 768px) {
+
+    /* =================================================
+       GENEL
+    ================================================= */
+
+    .cv-page-container {
+        width: 90%;
+    }
+
+
+    /* =================================================
+       HERO
+    ================================================= */
+
+    .about-page-hero {
+        padding: 50px 0;
+    }
+
+    .about-page-hero-wrapper {
+        width: 90%;
+        gap: 35px;
+    }
+
+    .about-page-hero-content h1 {
+        font-size: 38px;
+        line-height: 1.1;
+    }
+
+    .about-page-hero-content h2 {
+        font-size: 20px;
+    }
+
+    .about-page-hero-content p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .cv-hero-buttons {
+        flex-wrap: wrap;
+    }
+
+    .about-page-hero-image img {
+        width: 300px;
+        height: 375px;
+
+        border-radius: 18px;
+    }
+
+
+    /* =================================================
+       AKADEMİK SAYILAR
+    ================================================= */
+
+    .cv-stat-item {
+        padding: 25px 15px;
+    }
+
+    .cv-stat-item strong {
+        font-size: 27px;
+    }
+
+    .cv-stat-item span {
+        font-size: 12px;
+    }
+
+
+    /* =================================================
+       CV BÖLÜMLERİ
+    ================================================= */
+
+    .cv-section {
+        padding: 65px 0;
+    }
+
+    .cv-section-heading {
+        gap: 15px;
+        margin-bottom: 35px;
+    }
+
+    .cv-section-heading > span {
+        width: 46px;
+        height: 46px;
+
+        min-width: 46px;
+    }
+
+    .cv-section-heading h2 {
+        font-size: 28px;
+    }
+
+    .cv-section-heading .section-small-title {
+        font-size: 12px;
+    }
+
+
+    /* =================================================
+       PROFİL
+    ================================================= */
+
+    .cv-profile-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cv-profile-card {
+        padding: 22px;
+    }
+
+
+    /* =================================================
+       EĞİTİM TIMELINE
+    ================================================= */
+
+    .cv-timeline {
+        width: 100%;
+    }
+
+    .cv-timeline-item {
+        grid-template-columns: 110px 1fr;
+
+        gap: 20px;
+
+        padding-bottom: 32px;
+    }
+
+    .cv-timeline-year {
+        font-size: 13px;
+    }
+
+    .cv-timeline-content {
+        padding-left: 22px;
+    }
+
+    .cv-timeline-content h3 {
+        font-size: 18px;
+    }
+
+    .cv-timeline-content strong {
+        font-size: 15px;
+    }
+
+    .cv-timeline-content p {
+        font-size: 14px;
+    }
+
+
+    /* =================================================
+       İŞ TECRÜBESİ
+    ================================================= */
+
+    .experience-card {
+        padding: 22px;
+    }
+
+    .experience-card h3 {
+        font-size: 17px;
+    }
+
+
+    /* =================================================
+       ÜYELİKLER
+    ================================================= */
+
+    .membership-card {
+        padding: 21px;
+    }
+
+
+    /* =================================================
+       ÖDÜLLER
+    ================================================= */
+
+    .award-card {
+        padding: 21px;
+    }
+
+
+    /* =================================================
+       AKADEMİK ÇALIŞMALAR
+    ================================================= */
+
+    .academic-intro {
+        text-align: left;
+    }
+
+    .academic-stat-grid {
+        width: 100%;
+    }
+
+    .selected-publications {
+        width: 100%;
+    }
+
+    .publication-item {
+        grid-template-columns: 60px 1fr;
+    }
+
+
+    /* =================================================
+       KİTAP BÖLÜMLERİ
+    ================================================= */
+
+    .book-list {
+        width: 100%;
+    }
+
+
+    /* =================================================
+       EDİTÖRLÜK
+    ================================================= */
+
+    .academic-role-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* =================================================
+       HAKEMLİK
+    ================================================= */
+
+    .reviewer-box {
+        padding: 25px 20px;
+    }
+
+
+    /* =================================================
+       KONGRE
+    ================================================= */
+
+    .event-timeline {
+        width: 100%;
+    }
+
+
+    /* =================================================
+       CTA
+    ================================================= */
+
+    .cv-contact-cta {
+        padding: 55px 0;
+    }
+
+    .cv-contact-cta h2 {
+        font-size: 26px;
+    }
+
+}
+
+
+/* =====================================================
+   576px VE ALTI - TELEFON
+===================================================== */
+
+@media (max-width: 576px) {
+
+    /* =================================================
+       HERO
+    ================================================= */
+
+    .about-page-hero {
+        padding: 42px 0 50px;
+    }
+
+    .about-page-hero-wrapper {
+        width: 90%;
+
+        gap: 30px;
+    }
+
+    .about-page-hero-content h1 {
+        font-size: 34px;
+
+        margin-bottom: 12px;
+    }
+
+    .about-page-hero-content h2 {
+        font-size: 18px;
+
+        margin-bottom: 18px;
+    }
+
+    .about-page-hero-content p {
+        font-size: 14px;
+
+        line-height: 1.7;
+
+        margin-bottom: 25px;
+    }
+
+
+    /* BUTONLAR */
+
+    .cv-hero-buttons {
+        flex-direction: column;
+
+        width: 100%;
+    }
+
+    .cv-hero-buttons a {
+        width: 100%;
+    }
+
+
+    /* FOTOĞRAF */
+
+    .about-page-hero-image img {
+        width: 100%;
+
+        max-width: 290px;
+
+        height: auto;
+
+        aspect-ratio: 4 / 5;
+
+        object-fit: cover;
+        object-position: center top;
+    }
+
+
+    /* =================================================
+       İSTATİSTİKLER
+    ================================================= */
+
+    .cv-stats-grid {
+        width: 100%;
+
+        grid-template-columns: 1fr;
+    }
+
+    .cv-stat-item {
+        border-right: none;
+
+        border-bottom:
+            1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    .cv-stat-item:last-child {
+        border-bottom: none;
+    }
+
+    .cv-stat-item strong {
+        font-size: 28px;
+    }
+
+
+    /* =================================================
+       BÖLÜMLER
+    ================================================= */
+
+    .cv-section {
+        padding: 55px 0;
+    }
+
+    .cv-section-heading {
+        align-items: flex-start;
+
+        margin-bottom: 30px;
+    }
+
+    .cv-section-heading > span {
+        width: 42px;
+        height: 42px;
+
+        min-width: 42px;
+
+        font-size: 13px;
+    }
+
+    .cv-section-heading h2 {
+        font-size: 25px;
+
+        line-height: 1.2;
+    }
+
+
+    /* =================================================
+       PROFİL KARTLARI
+    ================================================= */
+
+    .cv-profile-card {
+        padding: 20px;
+    }
+
+    .cv-profile-card strong {
+        font-size: 15px;
+    }
+
+
+    /* =================================================
+       EĞİTİM TIMELINE
+    ================================================= */
+
+    .cv-timeline-item {
+        grid-template-columns: 1fr;
+
+        gap: 10px;
+
+        padding-bottom: 35px;
+    }
+
+    .cv-timeline-year {
+        text-align: left;
+
+        font-size: 14px;
+    }
+
+    .cv-timeline-content {
+        padding-left: 20px;
+    }
+
+    .cv-timeline-content h3 {
+        font-size: 18px;
+    }
+
+
+    /* =================================================
+       İŞ TECRÜBESİ
+    ================================================= */
+
+    .experience-list {
+        gap: 14px;
+    }
+
+    .experience-card {
+        padding: 20px;
+    }
+
+
+    /* =================================================
+       ÜYELİKLER
+    ================================================= */
+
+    .membership-grid {
+        gap: 14px;
+    }
+
+    .membership-card {
+        padding: 20px;
+    }
+
+
+    /* =================================================
+       ÖDÜLLER
+    ================================================= */
+
+    .award-list {
+        gap: 14px;
+    }
+
+    .award-card {
+        flex-direction: column;
+
+        gap: 8px;
+
+        padding: 20px;
+    }
+
+    .award-card > span {
+        min-width: auto;
+    }
+
+
+    /* =================================================
+       AKADEMİK İSTATİSTİKLER
+    ================================================= */
+
+    .academic-intro {
+        margin-bottom: 30px;
+    }
+
+    .academic-intro p {
+        font-size: 14px;
+    }
+
+    .academic-stat-grid {
+        grid-template-columns: 1fr;
+
+        gap: 12px;
+
+        margin-bottom: 40px;
+    }
+
+    .academic-stat-grid > div {
+        padding: 20px;
+    }
+
+
+    /* =================================================
+       YAYINLAR
+    ================================================= */
+
+    .selected-publications > h3 {
+        text-align: left;
+
+        font-size: 21px;
+    }
+
+    .publication-item {
+        grid-template-columns: 1fr;
+
+        gap: 7px;
+
+        padding: 18px 0;
+    }
+
+    .publication-item p {
+        font-size: 14px;
+    }
+
+    .publication-links {
+        flex-wrap: wrap;
+    }
+
+
+    /* =================================================
+       KİTAP BÖLÜMLERİ
+    ================================================= */
+
+    .book-list article {
+        grid-template-columns: 1fr;
+
+        gap: 7px;
+
+        padding: 18px;
+    }
+
+
+    /* =================================================
+       EDİTÖRLÜK
+    ================================================= */
+
+    .academic-role-grid {
+        gap: 14px;
+    }
+
+    .academic-role-grid article {
+        padding: 20px;
+    }
+
+
+    /* =================================================
+       HAKEMLİK
+    ================================================= */
+
+    .reviewer-box {
+        padding: 22px 18px;
+    }
+
+    .reviewer-box h3 {
+        text-align: left;
+    }
+
+    .reviewer-tags {
+        justify-content: flex-start;
+    }
+
+    .reviewer-tags span {
+        font-size: 12px;
+    }
+
+
+    /* =================================================
+       KONGRELER
+    ================================================= */
+
+    .event-timeline article {
+        grid-template-columns: 1fr;
+
+        gap: 7px;
+    }
+
+
+    /* =================================================
+       DAVETLİ KONUŞMALAR
+    ================================================= */
+
+    .talk-list {
+        gap: 14px;
+    }
+
+    .talk-list article {
+        padding: 20px;
+    }
+
+
+    /* =================================================
+       İLETİŞİM
+    ================================================= */
+
+    .cv-contact-cta {
+        padding: 48px 0;
+    }
+
+    .cv-contact-cta-wrapper {
+        width: 90%;
+
+        gap: 25px;
+    }
+
+    .cv-contact-cta h2 {
+        font-size: 24px;
+    }
+
+    .cv-contact-buttons {
+        width: 100%;
+
+        flex-direction: column;
+    }
+
+    .cv-contact-buttons a {
+        width: 100%;
+    }
+
+}
+
+
+/* =====================================================
+   420px VE ALTI - KÜÇÜK TELEFONLAR
+===================================================== */
+
+@media (max-width: 420px) {
+
+    .about-page-hero-content h1 {
+        font-size: 30px;
+    }
+
+    .about-page-hero-content h2 {
+        font-size: 17px;
+    }
+
+    .about-page-hero-image img {
+        max-width: 260px;
+    }
+
+
+    .cv-section-heading {
+        gap: 12px;
+    }
+
+    .cv-section-heading > span {
+        width: 38px;
+        height: 38px;
+
+        min-width: 38px;
+    }
+
+    .cv-section-heading h2 {
+        font-size: 22px;
+    }
+
+
+    .cv-profile-card,
+    .experience-card,
+    .membership-card,
+    .award-card,
+    .academic-role-grid article,
+    .talk-list article {
+        padding: 18px;
+    }
+
+
+    .cv-timeline-content {
+        padding-left: 18px;
+    }
+
+
+    .cv-contact-cta h2 {
+        font-size: 22px;
+    }
+
+}
+@media (max-width: 576px) {
+
+    .video-external-card {
+        padding: 25px 20px;
+    }
+
+    .video-external-icon {
+        width: 50px;
+        height: 50px;
+
+        font-size: 19px;
+    }
+
+    .video-external-card h3 {
+        font-size: 18px;
+    }
+
+    .video-external-card p {
+        font-size: 13px;
+    }
+
+    .video-youtube-button {
+        width: 100%;
+
+        max-width: 240px;
+    }
+
+}
+
+/* =====================================================
+   DİL SWITCH / NAVBAR RESPONSIVE
+===================================================== */
+@media (max-width:1150px) and (min-width:769px) {
+  .navbar { gap:14px; }
+  .nav-menu { gap:15px; }
+  .navbar-actions .nav-contact-button { display:none; }
+  .language-switch { width:82px; height:40px; }
+}
+@media (max-width:768px) {
+  .navbar-actions { margin-left:auto; gap:8px; }
+  .navbar-actions .nav-contact-button { display:none; }
+  .language-switch { width:78px; height:38px; }
+  .language-label { font-size:11px; }
+}
+@media (max-width:420px) { .language-switch { width:72px; height:36px; } }
+
+
+/* =====================================================
+   UZUN LİSTE BUTONLARI - MOBİL
+===================================================== */
+
+@media (max-width: 576px) {
+    .collapsible-toggle-wrap {
+        margin-top: 22px;
+    }
+
+    .content-toggle-button {
+        width: 100%;
+        max-width: 280px;
+    }
+}
